@@ -34,18 +34,22 @@ public class ATP extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
         jTextArea1.setForeground(new java.awt.Color(255, 153, 51));
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("En la bioquímica, se llama con las siglas ATP a una molécula orgánica del tipo \nde los nucleótidos, fundamental para la obtención de energía celular, conocida \ncomo Adenosín Trifosfato o Trifosfato de adenosina.\nSe trata de la fuente de energía principal para la mayoría de los procesos y \nfunciones celulares conocidas.\nEl nombre del ATP proviene de su composición molecular: una base nitrogenada \n(adenina) enlazada con el átomo de carbono de una molécula de azúcar de tipo pentosa \n(ribosa), a su vez con tres iones fosfatos enlazados en otro átomo de carbono.\nSu fórmula molecular es C10H16N5O13P3 y se lo produce tanto en la foto respiración vegetal, como en la respiración celular de los animales.\nEl ATP es muy soluble en agua (por hidrólisis) y estable en rangos de pH entre \n6.8 y 7.4. Al disolverse libera una gran cantidad de energía.\nComo posee diversos grupos moleculares que le otorgan una carga negativa (ionizado \na un nivel 4-), suele hallarse en las células como parte de un complejo con magnesio \n(Mg2+) u otros metales con los que presenta afinidad.\n");
+        jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 102, 0));
         jButton1.setText("BACK");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atp.png"))); // NOI18N
-        jLabel3.setText("jLabel3");
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 153, 51));
@@ -117,10 +121,8 @@ public class ATP extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ATP().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new ATP().setVisible(true);
         });
     }
 

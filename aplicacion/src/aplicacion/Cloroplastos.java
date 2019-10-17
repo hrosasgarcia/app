@@ -34,10 +34,16 @@ public class Cloroplastos extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setForeground(new java.awt.Color(0, 204, 102));
         jButton1.setText("BACK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
@@ -49,6 +55,7 @@ public class Cloroplastos extends javax.swing.JFrame {
         jTextArea1.setForeground(new java.awt.Color(0, 204, 102));
         jTextArea1.setRows(5);
         jTextArea1.setText("Los cloroplastos son los orgánulos celulares que en los organismos eucariotas fotosintetizador\nes se ocupan de la fotosíntesis. \nEstán limitados por una envoltura formada por dos membranas concéntricas y contienen\nvesículas, los tilacoides, donde se encuentran organizados los pigmentos y demás moléculas\nque convierten la energía lumínica en energía química, como la clorofila.\nEl término cloroplastos sirve alternativamente para designar a cualquier plasto dedicado a \nla fotosíntesis, o específicamente a los plastos verdes propios de las algas verdes y \nlas plantas. Aunque el reciente descubrimiento adiciona a más individuos en la lista, \ncomo lo es en el caso de Elysia chlorotica, que al digerir al alga Vaucheria litorea, \nadquiere los cloroplastos a sus tejidos, y gracias a esto, puede realizar fotosíntesis. ");
+        jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cloroplastos.jpg"))); // NOI18N
@@ -64,13 +71,13 @@ public class Cloroplastos extends javax.swing.JFrame {
                         .addGap(285, 285, 285)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 697, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton1)
                         .addGap(33, 33, 33)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -86,13 +93,17 @@ public class Cloroplastos extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addGap(70, 70, 70))
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(11, 11, 11)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(20, Short.MAX_VALUE))))
+                        .addContainerGap(22, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

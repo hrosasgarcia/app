@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -30,14 +31,14 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="697" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="521" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="712" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -58,9 +59,9 @@
                       <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="228" max="-2" attributes="0"/>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                      <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -78,6 +79,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="BACK"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -111,6 +115,7 @@
             </Property>
             <Property name="rows" type="int" value="5"/>
             <Property name="text" type="java.lang.String" value="Los cloroplastos son los org&#xe1;nulos celulares que en los organismos eucariotas fotosintetizador&#xa;es se ocupan de la fotos&#xed;ntesis. &#xa;Est&#xe1;n limitados por una envoltura formada por dos membranas conc&#xe9;ntricas y contienen&#xa;ves&#xed;culas, los tilacoides, donde se encuentran organizados los pigmentos y dem&#xe1;s mol&#xe9;culas&#xa;que convierten la energ&#xed;a lum&#xed;nica en energ&#xed;a qu&#xed;mica, como la clorofila.&#xa;El t&#xe9;rmino cloroplastos sirve alternativamente para designar a cualquier plasto dedicado a &#xa;la fotos&#xed;ntesis, o espec&#xed;ficamente a los plastos verdes propios de las algas verdes y &#xa;las plantas. Aunque el reciente descubrimiento adiciona a m&#xe1;s individuos en la lista, &#xa;como lo es en el caso de Elysia chlorotica, que al digerir al alga Vaucheria litorea, &#xa;adquiere los cloroplastos a sus tejidos, y gracias a esto, puede realizar fotos&#xed;ntesis. "/>
+            <Property name="wrapStyleWord" type="boolean" value="true"/>
           </Properties>
         </Component>
       </SubComponents>
