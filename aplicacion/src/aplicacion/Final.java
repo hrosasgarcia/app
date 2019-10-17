@@ -35,6 +35,7 @@ public class Final extends javax.swing.JFrame {
         jCheckBox2 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -127,10 +128,8 @@ public class Final extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Final().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Final().setVisible(true);
         });
     }
 
