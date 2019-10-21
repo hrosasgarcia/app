@@ -31,32 +31,37 @@ public class informacion extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        txtInformacion = new javax.swing.JTextArea();
+        btnBack = new javax.swing.JButton();
+        btnNext = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnCloroplastos = new javax.swing.JButton();
+        lblFaseLuminosa = new javax.swing.JLabel();
+        lblimg2 = new javax.swing.JLabel();
+        btnNadph = new javax.swing.JButton();
+        btnAtp = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jTextArea2.setBackground(new java.awt.Color(204, 204, 204));
-        jTextArea2.setColumns(20);
-        jTextArea2.setLineWrap(true);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("La fase luminosa de la fotosíntesis es aquella parte del proceso fotosintético \nque requiere la presencia de luz. Así, la luz inicia reacciones que resultan \nen la transformación de parte de la energía lumínica en energía química.\nLas reacciones bioquímicas ocurren en los tilacoides del cloroplasto,\ndonde se encuentran los pigmentos fotosintéticos que son excitados por la luz. \nEstos son la  clorofila a, la clorofila b y los carotenoides.\nPara que ocurran las  reacciones dependientes de la luz se requieren varios \nelementos. \nEs necesaria una fuente de luz dentro del espectro visible. \nIgualmente, se necesita la presencia de agua.\nLa fase luminosa de la fotosíntesis tiene como producto final la formación \nde ATP (trifosfato de adenosina) y NADPH (fosfato de dinucleótido de \nnicotinamida y adenina). Estas moléculas son utilizadas como fuente \nde energía para la fijación del CO2 en la fase oscura. \nAsimismo, durante esta fase se libera O2, producto de la ruptura de la \nmolécula de H2O.\n");
-        jScrollPane2.setViewportView(jTextArea2);
+        txtInformacion.setBackground(new java.awt.Color(204, 204, 204));
+        txtInformacion.setColumns(20);
+        txtInformacion.setLineWrap(true);
+        txtInformacion.setRows(5);
+        txtInformacion.setText("La fase luminosa de la fotosíntesis es aquella parte del proceso fotosintético \nque requiere la presencia de luz. Así, la luz inicia reacciones que resultan \nen la transformación de parte de la energía lumínica en energía química.\nLas reacciones bioquímicas ocurren en los tilacoides del cloroplasto,\ndonde se encuentran los pigmentos fotosintéticos que son excitados por la luz. \nEstos son la  clorofila a, la clorofila b y los carotenoides.\nPara que ocurran las  reacciones dependientes de la luz se requieren varios \nelementos. \nEs necesaria una fuente de luz dentro del espectro visible. \nIgualmente, se necesita la presencia de agua.\nLa fase luminosa de la fotosíntesis tiene como producto final la formación \nde ATP (trifosfato de adenosina) y NADPH (fosfato de dinucleótido de \nnicotinamida y adenina). Estas moléculas son utilizadas como fuente \nde energía para la fijación del CO2 en la fase oscura. \nAsimismo, durante esta fase se libera O2, producto de la ruptura de la \nmolécula de H2O.\n");
+        jScrollPane2.setViewportView(txtInformacion);
 
-        jButton1.setText("BACK");
-        jButton1.setName("btnBack"); // NOI18N
+        btnBack.setText("BACK");
+        btnBack.setName("btnBack"); // NOI18N
 
-        jButton2.setText("NEXT");
-        jButton2.setName("btnNext"); // NOI18N
+        btnNext.setText("NEXT");
+        btnNext.setName("btnNext"); // NOI18N
+        btnNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNextActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -69,29 +74,29 @@ public class informacion extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        jButton5.setText("Cloroplastos");
+        btnCloroplastos.setText("Cloroplastos");
 
-        jLabel1.setFont(new java.awt.Font("Traditional Arabic", 0, 18)); // NOI18N
-        jLabel1.setText("           F A S E   L U M I N O S A :");
+        lblFaseLuminosa.setFont(new java.awt.Font("Traditional Arabic", 0, 18)); // NOI18N
+        lblFaseLuminosa.setText("           F A S E   L U M I N O S A :");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/informacion.jpg"))); // NOI18N
+        lblimg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/informacion.jpg"))); // NOI18N
 
-        jButton4.setText("NDAPH");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnNadph.setText("NDAPH");
+        btnNadph.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnNadphActionPerformed(evt);
             }
         });
 
-        jButton3.setText("ATP");
+        btnAtp.setText("ATP");
 
-        jButton6.setBackground(new java.awt.Color(204, 0, 0));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("SALIR");
-        jButton6.setName("btnSalir"); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnSalir.setBackground(new java.awt.Color(204, 0, 0));
+        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalir.setText("SALIR");
+        btnSalir.setName("btnSalir"); // NOI18N
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnSalirActionPerformed(evt);
             }
         });
 
@@ -103,7 +108,7 @@ public class informacion extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(214, 214, 214)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblFaseLuminosa, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(57, 57, 57)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 622, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -112,25 +117,25 @@ public class informacion extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(79, 79, 79)
-                .addComponent(jButton1)
+                .addComponent(btnBack)
                 .addGap(49, 49, 49)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblimg2, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(73, 73, 73)
-                        .addComponent(jButton2)
+                        .addComponent(btnNext)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(btnCloroplastos, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnNadph, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnAtp, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(72, 72, 72))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jButton6)
+                                .addComponent(btnSalir)
                                 .addGap(28, 28, 28))))))
         );
         layout.setVerticalGroup(
@@ -142,42 +147,46 @@ public class informacion extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(175, 175, 175))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblFaseLuminosa, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1)
+                        .addComponent(btnBack)
                         .addGap(94, 94, 94))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblimg2, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(76, 76, 76)
-                        .addComponent(jButton4)
+                        .addComponent(btnNadph)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5)
+                        .addComponent(btnCloroplastos)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(btnAtp)
                         .addGap(103, 103, 103)
-                        .addComponent(jButton2)
+                        .addComponent(btnNext)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton6)
+                        .addComponent(btnSalir)
                         .addContainerGap())))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnNadphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNadphActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnNadphActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnNextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,16 +222,20 @@ public class informacion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton btnAtp;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnCloroplastos;
+    private javax.swing.JButton btnNadph;
+    private javax.swing.JButton btnNext;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JLabel lblFaseLuminosa;
+    private javax.swing.JLabel lblimg2;
+    private javax.swing.JTextArea txtInformacion;
     // End of variables declaration//GEN-END:variables
+
+    void SetVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
