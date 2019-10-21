@@ -27,21 +27,21 @@ public class Cloroplastos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnregresar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtcloroplastos = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setForeground(new java.awt.Color(0, 204, 102));
-        jButton1.setText("BACK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnregresar.setBackground(new java.awt.Color(0, 0, 0));
+        btnregresar.setForeground(new java.awt.Color(0, 204, 102));
+        btnregresar.setText("BACK");
+        btnregresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnregresarActionPerformed(evt);
             }
         });
 
@@ -50,13 +50,13 @@ public class Cloroplastos extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 153, 0));
         jLabel1.setText("C L O R O P L A S T O S");
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(0, 204, 102));
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Los cloroplastos son los orgánulos celulares que en los organismos eucariotas fotosintetizador\nes se ocupan de la fotosíntesis. \nEstán limitados por una envoltura formada por dos membranas concéntricas y contienen\nvesículas, los tilacoides, donde se encuentran organizados los pigmentos y demás moléculas\nque convierten la energía lumínica en energía química, como la clorofila.\nEl término cloroplastos sirve alternativamente para designar a cualquier plasto dedicado a \nla fotosíntesis, o específicamente a los plastos verdes propios de las algas verdes y \nlas plantas. Aunque el reciente descubrimiento adiciona a más individuos en la lista, \ncomo lo es en el caso de Elysia chlorotica, que al digerir al alga Vaucheria litorea, \nadquiere los cloroplastos a sus tejidos, y gracias a esto, puede realizar fotosíntesis. ");
-        jTextArea1.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtcloroplastos.setBackground(new java.awt.Color(0, 0, 0));
+        txtcloroplastos.setColumns(20);
+        txtcloroplastos.setForeground(new java.awt.Color(0, 204, 102));
+        txtcloroplastos.setRows(5);
+        txtcloroplastos.setText("Los cloroplastos son los orgánulos celulares que en los organismos eucariotas fotosintetizador\nes se ocupan de la fotosíntesis. \nEstán limitados por una envoltura formada por dos membranas concéntricas y contienen\nvesículas, los tilacoides, donde se encuentran organizados los pigmentos y demás moléculas\nque convierten la energía lumínica en energía química, como la clorofila.\nEl término cloroplastos sirve alternativamente para designar a cualquier plasto dedicado a \nla fotosíntesis, o específicamente a los plastos verdes propios de las algas verdes y \nlas plantas. Aunque el reciente descubrimiento adiciona a más individuos en la lista, \ncomo lo es en el caso de Elysia chlorotica, que al digerir al alga Vaucheria litorea, \nadquiere los cloroplastos a sus tejidos, y gracias a esto, puede realizar fotosíntesis. ");
+        txtcloroplastos.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txtcloroplastos);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cloroplastos.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -72,7 +72,7 @@ public class Cloroplastos extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1)
+                        .addComponent(btnregresar)
                         .addGap(33, 33, 33)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -90,7 +90,7 @@ public class Cloroplastos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(btnregresar)
                         .addGap(70, 70, 70))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(11, 11, 11)
@@ -101,9 +101,9 @@ public class Cloroplastos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnregresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregresarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnregresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,10 +141,10 @@ public class Cloroplastos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnregresar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea txtcloroplastos;
     // End of variables declaration//GEN-END:variables
 }
