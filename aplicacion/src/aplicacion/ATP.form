@@ -36,7 +36,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="300" max="-2" attributes="0"/>
                   </Group>
@@ -56,7 +56,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jLabel3" min="-2" pref="179" max="-2" attributes="0"/>
               </Group>
@@ -86,11 +86,12 @@
             <Property name="rows" type="int" value="5"/>
             <Property name="text" type="java.lang.String" value="En la bioqu&#xed;mica, se llama con las siglas ATP a una mol&#xe9;cula org&#xe1;nica del tipo &#xa;de los nucle&#xf3;tidos, fundamental para la obtenci&#xf3;n de energ&#xed;a celular, conocida &#xa;como Adenos&#xed;n Trifosfato o Trifosfato de adenosina.&#xa;Se trata de la fuente de energ&#xed;a principal para la mayor&#xed;a de los procesos y &#xa;funciones celulares conocidas.&#xa;El nombre del ATP proviene de su composici&#xf3;n molecular: una base nitrogenada &#xa;(adenina) enlazada con el &#xe1;tomo de carbono de una mol&#xe9;cula de az&#xfa;car de tipo pentosa &#xa;(ribosa), a su vez con tres iones fosfatos enlazados en otro &#xe1;tomo de carbono.&#xa;Su f&#xf3;rmula molecular es C10H16N5O13P3 y se lo produce tanto en la foto respiraci&#xf3;n vegetal, como en la respiraci&#xf3;n celular de los animales.&#xa;El ATP es muy soluble en agua (por hidr&#xf3;lisis) y estable en rangos de pH entre &#xa;6.8 y 7.4. Al disolverse libera una gran cantidad de energ&#xed;a.&#xa;Como posee diversos grupos moleculares que le otorgan una carga negativa (ionizado &#xa;a un nivel 4-), suele hallarse en las c&#xe9;lulas como parte de un complejo con magnesio &#xa;(Mg2+) u otros metales con los que presenta afinidad.&#xa;"/>
             <Property name="wrapStyleWord" type="boolean" value="true"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnBack">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -100,6 +101,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="BACK"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>

@@ -5,6 +5,8 @@
  */
 package aplicacion;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author 17PROGB0442
@@ -16,6 +18,7 @@ public class Cloroplastos extends javax.swing.JFrame {
      */
     public Cloroplastos() {
         initComponents();
+         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -27,7 +30,7 @@ public class Cloroplastos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnregresar = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtcloroplastos = new javax.swing.JTextArea();
@@ -36,12 +39,12 @@ public class Cloroplastos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        btnregresar.setBackground(new java.awt.Color(0, 0, 0));
-        btnregresar.setForeground(new java.awt.Color(0, 204, 102));
-        btnregresar.setText("BACK");
-        btnregresar.addActionListener(new java.awt.event.ActionListener() {
+        btnBack.setBackground(new java.awt.Color(0, 0, 0));
+        btnBack.setForeground(new java.awt.Color(0, 204, 102));
+        btnBack.setText("BACK");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnregresarActionPerformed(evt);
+                btnBackActionPerformed(evt);
             }
         });
 
@@ -56,6 +59,8 @@ public class Cloroplastos extends javax.swing.JFrame {
         txtcloroplastos.setRows(5);
         txtcloroplastos.setText("Los cloroplastos son los orgánulos celulares que en los organismos eucariotas fotosintetizador\nes se ocupan de la fotosíntesis. \nEstán limitados por una envoltura formada por dos membranas concéntricas y contienen\nvesículas, los tilacoides, donde se encuentran organizados los pigmentos y demás moléculas\nque convierten la energía lumínica en energía química, como la clorofila.\nEl término cloroplastos sirve alternativamente para designar a cualquier plasto dedicado a \nla fotosíntesis, o específicamente a los plastos verdes propios de las algas verdes y \nlas plantas. Aunque el reciente descubrimiento adiciona a más individuos en la lista, \ncomo lo es en el caso de Elysia chlorotica, que al digerir al alga Vaucheria litorea, \nadquiere los cloroplastos a sus tejidos, y gracias a esto, puede realizar fotosíntesis. ");
         txtcloroplastos.setWrapStyleWord(true);
+        txtcloroplastos.setFocusable(false);
+        txtcloroplastos.setName("CLOROPLASTOS"); // NOI18N
         jScrollPane1.setViewportView(txtcloroplastos);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cloroplastos.jpg"))); // NOI18N
@@ -72,7 +77,7 @@ public class Cloroplastos extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnregresar)
+                        .addComponent(btnBack)
                         .addGap(33, 33, 33)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -90,7 +95,7 @@ public class Cloroplastos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnregresar)
+                        .addComponent(btnBack)
                         .addGap(70, 70, 70))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(11, 11, 11)
@@ -101,9 +106,9 @@ public class Cloroplastos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnregresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregresarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnregresarActionPerformed
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        dispose();    
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,7 +146,7 @@ public class Cloroplastos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnregresar;
+    private javax.swing.JButton btnBack;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;

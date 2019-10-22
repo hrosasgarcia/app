@@ -5,6 +5,9 @@
  */
 package aplicacion;
 
+import java.awt.Color;
+import static javafx.scene.paint.Color.color;
+
 /**
  *
  * @author 17PROGB0442
@@ -16,6 +19,7 @@ public class Final extends javax.swing.JFrame {
      */
     public Final() {
         initComponents();
+        this.getContentPane() .setBackground(Color.pink);
         this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
     }
 
@@ -32,15 +36,16 @@ public class Final extends javax.swing.JFrame {
         txtAcercaDe = new javax.swing.JTextArea();
         btnFinalizar = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
-        cmbMeGusto = new javax.swing.JCheckBox();
-        cmbNoMeGusto = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         txtAcercaDe.setColumns(20);
+        txtAcercaDe.setLineWrap(true);
         txtAcercaDe.setRows(5);
         txtAcercaDe.setText("              CREADORES\n\n       Abdallan Longinos De La Cruz\n       Adrian Rosas Garcia\n       Israel Reyes Rodriguez");
+        txtAcercaDe.setWrapStyleWord(true);
+        txtAcercaDe.setFocusable(false);
         jScrollPane1.setViewportView(txtAcercaDe);
 
         btnFinalizar.setText("FINALIZAR");
@@ -51,10 +56,11 @@ public class Final extends javax.swing.JFrame {
         });
 
         btnRegresar.setText("BACK");
-
-        cmbMeGusto.setText("me gusto :)");
-
-        cmbNoMeGusto.setText("no me gusto :(");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -63,31 +69,20 @@ public class Final extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(btnRegresar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 385, Short.MAX_VALUE)
                 .addComponent(btnFinalizar)
                 .addGap(43, 43, 43))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(225, 225, 225)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cmbNoMeGusto)
-                            .addComponent(cmbMeGusto))))
-                .addContainerGap(170, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cmbMeGusto)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cmbNoMeGusto)
-                .addGap(36, 36, 36)
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnFinalizar)
                     .addComponent(btnRegresar))
@@ -100,6 +95,10 @@ public class Final extends javax.swing.JFrame {
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
        System.exit(0);
     }//GEN-LAST:event_btnFinalizarActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+     dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,8 +136,6 @@ public class Final extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnRegresar;
-    private javax.swing.JCheckBox cmbMeGusto;
-    private javax.swing.JCheckBox cmbNoMeGusto;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txtAcercaDe;
     // End of variables declaration//GEN-END:variables

@@ -5,6 +5,7 @@
  */
 package aplicacion;
 
+import java.awt.Color;
 import javax.swing.JFrame;
 
 /**
@@ -18,6 +19,7 @@ public class informacion extends javax.swing.JFrame {
      */
     public informacion() {
         initComponents();
+       
         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
 
@@ -41,19 +43,26 @@ public class informacion extends javax.swing.JFrame {
         btnNadph = new javax.swing.JButton();
         btnAtp = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
+        btnClorofila = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setName("FASE LUMINOSA"); // NOI18N
         setResizable(false);
 
         txtInformacion.setBackground(new java.awt.Color(204, 204, 204));
         txtInformacion.setColumns(20);
-        txtInformacion.setLineWrap(true);
         txtInformacion.setRows(5);
-        txtInformacion.setText("La fase luminosa de la fotosíntesis es aquella parte del proceso fotosintético \nque requiere la presencia de luz. Así, la luz inicia reacciones que resultan \nen la transformación de parte de la energía lumínica en energía química.\nLas reacciones bioquímicas ocurren en los tilacoides del cloroplasto,\ndonde se encuentran los pigmentos fotosintéticos que son excitados por la luz. \nEstos son la  clorofila a, la clorofila b y los carotenoides.\nPara que ocurran las  reacciones dependientes de la luz se requieren varios \nelementos. \nEs necesaria una fuente de luz dentro del espectro visible. \nIgualmente, se necesita la presencia de agua.\nLa fase luminosa de la fotosíntesis tiene como producto final la formación \nde ATP (trifosfato de adenosina) y NADPH (fosfato de dinucleótido de \nnicotinamida y adenina). Estas moléculas son utilizadas como fuente \nde energía para la fijación del CO2 en la fase oscura. \nAsimismo, durante esta fase se libera O2, producto de la ruptura de la \nmolécula de H2O.\n");
+        txtInformacion.setText("La fase luminosa de la fotosíntesis es aquella parte del proceso fotosintético \nque requiere la presencia de luz. Así, la luz inicia reacciones que resultan \nen la transformación de parte de la energía lumínica en energía química.\nLas reacciones bioquímicas ocurren en los tilacoides del cloroplasto,\ndonde se encuentran los pigmentos fotosintéticos que son excitados por la luz. \nEstos son la  clorofila a, la clorofila b y los carotenoides.\nPara que ocurran las  reacciones dependientes de la luz se requieren varios elementos. \nEs necesaria una fuente de luz dentro del espectro visible,igualmente, se necesita la presencia de agua.\nLa fase luminosa de la fotosíntesis tiene como producto final la formación \nde ATP (trifosfato de adenosina) y NADPH (fosfato de dinucleótido de \nnicotinamida y adenina). Estas moléculas son utilizadas como fuente \nde energía para la fijación del CO2 en la fase oscura. \nAsimismo, durante esta fase se libera O2, producto de la ruptura de la \nmolécula de H2O.\n");
+        txtInformacion.setFocusable(false);
         jScrollPane2.setViewportView(txtInformacion);
 
         btnBack.setText("BACK");
         btnBack.setName("btnBack"); // NOI18N
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
 
         btnNext.setText("NEXT");
         btnNext.setName("btnNext"); // NOI18N
@@ -75,6 +84,11 @@ public class informacion extends javax.swing.JFrame {
         );
 
         btnCloroplastos.setText("Cloroplastos");
+        btnCloroplastos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCloroplastosActionPerformed(evt);
+            }
+        });
 
         lblFaseLuminosa.setFont(new java.awt.Font("Traditional Arabic", 0, 18)); // NOI18N
         lblFaseLuminosa.setText("           F A S E   L U M I N O S A :");
@@ -89,6 +103,11 @@ public class informacion extends javax.swing.JFrame {
         });
 
         btnAtp.setText("ATP");
+        btnAtp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtpActionPerformed(evt);
+            }
+        });
 
         btnSalir.setBackground(new java.awt.Color(204, 0, 0));
         btnSalir.setForeground(new java.awt.Color(255, 255, 255));
@@ -100,6 +119,14 @@ public class informacion extends javax.swing.JFrame {
             }
         });
 
+        btnClorofila.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        btnClorofila.setText("Clorofila");
+        btnClorofila.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClorofilaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -108,91 +135,112 @@ public class informacion extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(214, 214, 214)
-                        .addComponent(lblFaseLuminosa, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 622, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblFaseLuminosa, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(186, 186, 186))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(79, 79, 79)
                 .addComponent(btnBack)
-                .addGap(49, 49, 49)
-                .addComponent(lblimg2, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(83, 83, 83)
+                .addComponent(lblimg2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(73, 73, 73)
-                        .addComponent(btnNext)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnCloroplastos, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnNadph, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnAtp, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(72, 72, 72))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnSalir)
-                                .addGap(28, 28, 28))))))
+                            .addComponent(btnClorofila, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCloroplastos, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnNadph, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnAtp, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(62, 62, 62))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSalir)
+                            .addComponent(btnNext))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 11, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(175, 175, 175))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 256, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(btnBack)
+                                .addGap(94, 94, 94))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(btnNadph)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnCloroplastos)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnAtp)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnClorofila)
+                                .addGap(73, 73, 73)
+                                .addComponent(btnNext)
+                                .addGap(40, 40, 40)
+                                .addComponent(btnSalir)
+                                .addGap(80, 80, 80))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblFaseLuminosa, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnBack)
-                        .addGap(94, 94, 94))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblimg2, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(btnNadph)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnCloroplastos)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnAtp)
-                        .addGap(103, 103, 103)
-                        .addComponent(btnNext)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSalir)
-                        .addContainerGap())))
+                        .addComponent(lblimg2, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnNadphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNadphActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnNadphActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
-        System.exit(0);
+       Final obj1 = new Final();
+        obj1.setVisible(true);
     }//GEN-LAST:event_btnNextActionPerformed
+
+    private void btnNadphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNadphActionPerformed
+        nadph obj2 = new nadph();
+        obj2.setVisible(true);
+    }//GEN-LAST:event_btnNadphActionPerformed
+
+    private void btnCloroplastosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloroplastosActionPerformed
+        Cloroplastos obj3 = new Cloroplastos();
+        obj3.setVisible(true);
+    
+    }//GEN-LAST:event_btnCloroplastosActionPerformed
+
+    private void btnAtpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtpActionPerformed
+       ATP obj4;
+        obj4 = new ATP ();
+        obj4.setVisible(true);
+    }//GEN-LAST:event_btnAtpActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+     dispose();        
+    }//GEN-LAST:event_btnBackActionPerformed
+
+    private void btnClorofilaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClorofilaActionPerformed
+        clorofila obj5;
+        obj5 = new clorofila ();
+        obj5.setVisible(true);
+    }//GEN-LAST:event_btnClorofilaActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+    public static void main(String args[]) { /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -204,15 +252,11 @@ public class informacion extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(informacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(informacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(informacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(informacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        
         //</editor-fold>
 
         /* Create and display the form */
@@ -224,6 +268,7 @@ public class informacion extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtp;
     private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnClorofila;
     private javax.swing.JButton btnCloroplastos;
     private javax.swing.JButton btnNadph;
     private javax.swing.JButton btnNext;

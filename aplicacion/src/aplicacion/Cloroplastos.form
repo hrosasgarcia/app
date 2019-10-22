@@ -32,7 +32,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnregresar" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="521" max="-2" attributes="0"/>
                   </Group>
@@ -55,7 +55,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="btnregresar" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -69,7 +69,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="btnregresar">
+    <Component class="javax.swing.JButton" name="btnBack">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -80,7 +80,7 @@
         <Property name="text" type="java.lang.String" value="BACK"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnregresarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
@@ -116,6 +116,8 @@
             <Property name="rows" type="int" value="5"/>
             <Property name="text" type="java.lang.String" value="Los cloroplastos son los org&#xe1;nulos celulares que en los organismos eucariotas fotosintetizador&#xa;es se ocupan de la fotos&#xed;ntesis. &#xa;Est&#xe1;n limitados por una envoltura formada por dos membranas conc&#xe9;ntricas y contienen&#xa;ves&#xed;culas, los tilacoides, donde se encuentran organizados los pigmentos y dem&#xe1;s mol&#xe9;culas&#xa;que convierten la energ&#xed;a lum&#xed;nica en energ&#xed;a qu&#xed;mica, como la clorofila.&#xa;El t&#xe9;rmino cloroplastos sirve alternativamente para designar a cualquier plasto dedicado a &#xa;la fotos&#xed;ntesis, o espec&#xed;ficamente a los plastos verdes propios de las algas verdes y &#xa;las plantas. Aunque el reciente descubrimiento adiciona a m&#xe1;s individuos en la lista, &#xa;como lo es en el caso de Elysia chlorotica, que al digerir al alga Vaucheria litorea, &#xa;adquiere los cloroplastos a sus tejidos, y gracias a esto, puede realizar fotos&#xed;ntesis. "/>
             <Property name="wrapStyleWord" type="boolean" value="true"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="name" type="java.lang.String" value="CLOROPLASTOS" noResource="true"/>
           </Properties>
         </Component>
       </SubComponents>

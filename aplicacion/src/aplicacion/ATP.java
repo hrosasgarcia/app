@@ -5,6 +5,8 @@
  */
 package aplicacion;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author 17PROGB0442
@@ -16,6 +18,7 @@ public class ATP extends javax.swing.JFrame {
      */
     public ATP() {
         initComponents();
+         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -29,7 +32,7 @@ public class ATP extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         txtatp = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -43,11 +46,17 @@ public class ATP extends javax.swing.JFrame {
         txtatp.setRows(5);
         txtatp.setText("En la bioquímica, se llama con las siglas ATP a una molécula orgánica del tipo \nde los nucleótidos, fundamental para la obtención de energía celular, conocida \ncomo Adenosín Trifosfato o Trifosfato de adenosina.\nSe trata de la fuente de energía principal para la mayoría de los procesos y \nfunciones celulares conocidas.\nEl nombre del ATP proviene de su composición molecular: una base nitrogenada \n(adenina) enlazada con el átomo de carbono de una molécula de azúcar de tipo pentosa \n(ribosa), a su vez con tres iones fosfatos enlazados en otro átomo de carbono.\nSu fórmula molecular es C10H16N5O13P3 y se lo produce tanto en la foto respiración vegetal, como en la respiración celular de los animales.\nEl ATP es muy soluble en agua (por hidrólisis) y estable en rangos de pH entre \n6.8 y 7.4. Al disolverse libera una gran cantidad de energía.\nComo posee diversos grupos moleculares que le otorgan una carga negativa (ionizado \na un nivel 4-), suele hallarse en las células como parte de un complejo con magnesio \n(Mg2+) u otros metales con los que presenta afinidad.\n");
         txtatp.setWrapStyleWord(true);
+        txtatp.setFocusable(false);
         jScrollPane1.setViewportView(txtatp);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 102, 0));
-        jButton1.setText("BACK");
+        btnBack.setBackground(new java.awt.Color(0, 0, 0));
+        btnBack.setForeground(new java.awt.Color(255, 102, 0));
+        btnBack.setText("BACK");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atp.png"))); // NOI18N
 
@@ -69,7 +78,7 @@ public class ATP extends javax.swing.JFrame {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1)
+                        .addComponent(btnBack)
                         .addGap(110, 110, 110)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -85,13 +94,17 @@ public class ATP extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(50, 50, 50)
-                        .addComponent(jButton1))
+                        .addComponent(btnBack))
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+          dispose();    
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,7 +140,7 @@ public class ATP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnBack;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;

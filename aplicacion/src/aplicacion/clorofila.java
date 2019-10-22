@@ -5,6 +5,8 @@
  */
 package aplicacion;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author 17PROGB0442
@@ -16,6 +18,7 @@ public class clorofila extends javax.swing.JFrame {
      */
     public clorofila() {
         initComponents();
+         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -37,6 +40,7 @@ public class clorofila extends javax.swing.JFrame {
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 51));
         jLabel1.setText("    C L O R O F I L A");
 
         txtclorofila.setBackground(new java.awt.Color(0, 0, 0));
@@ -45,12 +49,21 @@ public class clorofila extends javax.swing.JFrame {
         txtclorofila.setLineWrap(true);
         txtclorofila.setRows(5);
         txtclorofila.setText("Las clorofilas (del griego χλωρος, chloros, \"verde\", y φύλλον, fýlon, \"hoja\")1​ son una familia de pigmentos de color verde que se encuentran en las cianobacterias y en todos aquellos organismos que contienen cloroplastos o membranas tilocoidales en sus células, lo que incluye a las plantas y a las diversas algas. La clorofila es una biomolécula \nextremadamente importante, crítica. \nen la fotosíntesis, proceso que permite a las plantas y algas producir energía a partir de la luz solar. ");
+        txtclorofila.setWrapStyleWord(true);
+        txtclorofila.setFocusable(false);
         jScrollPane1.setViewportView(txtclorofila);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/clorofilas.jpeg"))); // NOI18N
         jLabel2.setText("jLabel2");
 
+        btnback.setBackground(new java.awt.Color(0, 0, 0));
+        btnback.setForeground(new java.awt.Color(0, 153, 0));
         btnback.setText("BACK");
+        btnback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbackActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,12 +77,12 @@ public class clorofila extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(btnback)
-                        .addGap(18, 18, 18)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(193, 193, 193)
                         .addComponent(jLabel1)))
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -77,20 +90,20 @@ public class clorofila extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(24, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnback)
-                        .addGap(64, 64, 64))))
+                    .addComponent(btnback, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(64, 64, 64))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
+         dispose();    
+    }//GEN-LAST:event_btnbackActionPerformed
 
     /**
      * @param args the command line arguments

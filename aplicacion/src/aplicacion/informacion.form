@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="name" type="java.lang.String" value="FASE LUMINOSA" noResource="true"/>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -29,43 +30,40 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="214" max="-2" attributes="0"/>
                       <Component id="lblFaseLuminosa" min="-2" pref="289" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="622" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="548" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
               <Component id="btnBack" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Component id="lblimg2" min="-2" pref="355" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+              <Component id="lblimg2" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                      <Component id="btnNext" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="48" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="132" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnCloroplastos" min="-2" pref="107" max="-2" attributes="0"/>
-                                  <Component id="btnNadph" min="-2" pref="107" max="-2" attributes="0"/>
-                                  <Component id="btnAtp" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="btnClorofila" min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="btnCloroplastos" min="-2" pref="107" max="-2" attributes="0"/>
+                          <Component id="btnNadph" min="-2" pref="107" max="-2" attributes="0"/>
+                          <Component id="btnAtp" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnNext" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -74,41 +72,39 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+                      <EmptySpace pref="256" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="btnNadph" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btnCloroplastos" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnAtp" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btnClorofila" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="btnNext" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblFaseLuminosa" min="-2" pref="26" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="280" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblimg2" min="-2" pref="379" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                      <Component id="btnNadph" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnCloroplastos" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnAtp" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
-                      <Component id="btnNext" min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="247" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblimg2" min="-2" pref="376" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -129,9 +125,9 @@
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="columns" type="int" value="20"/>
-            <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="La fase luminosa de la fotos&#xed;ntesis es aquella parte del proceso fotosint&#xe9;tico &#xa;que requiere la presencia de luz. As&#xed;, la luz inicia reacciones que resultan &#xa;en la transformaci&#xf3;n de parte de la energ&#xed;a lum&#xed;nica en energ&#xed;a qu&#xed;mica.&#xa;Las reacciones bioqu&#xed;micas ocurren en los tilacoides del cloroplasto,&#xa;donde se encuentran los pigmentos fotosint&#xe9;ticos que son excitados por la luz. &#xa;Estos son la  clorofila a, la clorofila b y los carotenoides.&#xa;Para que ocurran las  reacciones dependientes de la luz se requieren varios &#xa;elementos. &#xa;Es necesaria una fuente de luz dentro del espectro visible. &#xa;Igualmente, se necesita la presencia de agua.&#xa;La fase luminosa de la fotos&#xed;ntesis tiene como producto final la formaci&#xf3;n &#xa;de ATP (trifosfato de adenosina) y NADPH (fosfato de dinucle&#xf3;tido de &#xa;nicotinamida y adenina). Estas mol&#xe9;culas son utilizadas como fuente &#xa;de energ&#xed;a para la fijaci&#xf3;n del CO2 en la fase oscura. &#xa;Asimismo, durante esta fase se libera O2, producto de la ruptura de la &#xa;mol&#xe9;cula de H2O.&#xa;"/>
+            <Property name="text" type="java.lang.String" value="La fase luminosa de la fotos&#xed;ntesis es aquella parte del proceso fotosint&#xe9;tico &#xa;que requiere la presencia de luz. As&#xed;, la luz inicia reacciones que resultan &#xa;en la transformaci&#xf3;n de parte de la energ&#xed;a lum&#xed;nica en energ&#xed;a qu&#xed;mica.&#xa;Las reacciones bioqu&#xed;micas ocurren en los tilacoides del cloroplasto,&#xa;donde se encuentran los pigmentos fotosint&#xe9;ticos que son excitados por la luz. &#xa;Estos son la  clorofila a, la clorofila b y los carotenoides.&#xa;Para que ocurran las  reacciones dependientes de la luz se requieren varios elementos. &#xa;Es necesaria una fuente de luz dentro del espectro visible,igualmente, se necesita la presencia de agua.&#xa;La fase luminosa de la fotos&#xed;ntesis tiene como producto final la formaci&#xf3;n &#xa;de ATP (trifosfato de adenosina) y NADPH (fosfato de dinucle&#xf3;tido de &#xa;nicotinamida y adenina). Estas mol&#xe9;culas son utilizadas como fuente &#xa;de energ&#xed;a para la fijaci&#xf3;n del CO2 en la fase oscura. &#xa;Asimismo, durante esta fase se libera O2, producto de la ruptura de la &#xa;mol&#xe9;cula de H2O.&#xa;"/>
+            <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -141,6 +137,9 @@
         <Property name="text" type="java.lang.String" value="BACK"/>
         <Property name="name" type="java.lang.String" value="btnBack" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnNext">
       <Properties>
@@ -170,6 +169,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Cloroplastos"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCloroplastosActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblFaseLuminosa">
       <Properties>
@@ -198,6 +200,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ATP"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtpActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSalir">
       <Properties>
@@ -212,6 +217,17 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnClorofila">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="11" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Clorofila"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnClorofilaActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
