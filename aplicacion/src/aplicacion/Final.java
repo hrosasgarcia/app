@@ -38,6 +38,7 @@ public class Final extends javax.swing.JFrame {
         btnRegresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Acerca De");
         setResizable(false);
 
         txtAcercaDe.setColumns(20);

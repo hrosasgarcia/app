@@ -38,7 +38,9 @@ public class nadph extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Subtema");
         setFont(new java.awt.Font("Algerian", 0, 10)); // NOI18N
+        setName(""); // NOI18N
         setResizable(false);
 
         jPanel1.setFocusable(false);

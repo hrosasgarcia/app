@@ -37,6 +37,7 @@ public class Cloroplastos extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Subtema");
         setResizable(false);
 
         btnBack.setBackground(new java.awt.Color(0, 0, 0));

@@ -32,7 +32,7 @@ public class inicio extends javax.swing.JFrame {
         btnSALIR = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("dgdhd");
+        setTitle("Fase Luminosa");
         setBackground(new java.awt.Color(204, 204, 0));
         setFocusable(false);
         setFocusableWindowState(false);
