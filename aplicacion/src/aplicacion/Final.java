@@ -43,7 +43,7 @@ public class Final extends javax.swing.JFrame {
         txtAcercaDe.setColumns(20);
         txtAcercaDe.setLineWrap(true);
         txtAcercaDe.setRows(5);
-        txtAcercaDe.setText("              CREADORES\n\n       Abdallan Longinos De La Cruz\n       Adrian Rosas Garcia\n       Israel Reyes Rodriguez");
+        txtAcercaDe.setText("                  CREADORES\n\n       Abdallan Longinos De La Cruz\n       Adrian Rosas Garcia\n       Israel Reyes Rodriguez");
         txtAcercaDe.setWrapStyleWord(true);
         txtAcercaDe.setFocusable(false);
         jScrollPane1.setViewportView(txtAcercaDe);
@@ -72,17 +72,17 @@ public class Final extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 385, Short.MAX_VALUE)
                 .addComponent(btnFinalizar)
                 .addGap(43, 43, 43))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(113, 113, 113)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(115, 115, 115))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
+                .addGap(67, 67, 67)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnFinalizar)
                     .addComponent(btnRegresar))
@@ -92,13 +92,13 @@ public class Final extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
-       System.exit(0);
-    }//GEN-LAST:event_btnFinalizarActionPerformed
-
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
      dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
+
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnFinalizarActionPerformed
 
     /**
      * @param args the command line arguments

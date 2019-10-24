@@ -41,12 +41,15 @@ public class nadph extends javax.swing.JFrame {
         setFont(new java.awt.Font("Algerian", 0, 10)); // NOI18N
         setResizable(false);
 
+        jPanel1.setFocusable(false);
+
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(0, 51, 255));
+        jTextArea1.setForeground(new java.awt.Color(0, 153, 204));
         jTextArea1.setRows(5);
         jTextArea1.setText("La nicotinamida adenina dinucleótido fosfato (abreviada NADP+\nen su forma oxidada y NADPH+H+ en su forma reducida) es una \ncoenzima que interviene en numerosas vías anabólicas. Su estructura\nquímica contiene la vitamina B3 y es además análogo de la nicotinamida\nadenina dinucleótido (NADH+H+; NAD+ en su forma oxidada). \nSu fórmula empírica es C21H29N7O17P3.1 \nEl NADPH+H+ proporciona parte del poder reductor necesario para\nlas reacciones de reducción de la biosíntesis. \nInterviene en la fase oscura de la fotosíntesis (ciclo de Cal\nvin), en la que se fija el dióxido de carbono (CO2); el NADPH+H+\nse genera durante la fase luminosa. \nEste cofactor es esencial tanto en reacciones anabólicas como catabólicas. \nLas rutas catabólicas suministran energía química en forma de ATP,\nNADH+H+, NADPH+H+ y FADH2.2 Estos transportadores de energía se \nutilizan en las rutas anabólicas para convertir moléculas precursoras\npequeñas en macromoléculas celulares. En los procesos anabólicos \nactúa como cofactor de las reductasas. \nEn los animales, la mayor fuente de NADPH+H+ es la fase oxidativa \nde la ruta de la pentosa fosfato, que produce 60% de los requerimientos\nde la célula\n");
         jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen06.jpg"))); // NOI18N
